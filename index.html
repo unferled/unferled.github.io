@@ -91,9 +91,9 @@
                         document.getElementById("contact-form-submit").innerText = 'Submitted!'
                     }
 
+                    request.open(form.method, form.action)
                     request.setRequestHeader('Access-Control-Allow-Origin', 'https://unferled.github.io');
                     request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
-                    request.open(form.method, form.action)
                     request.send(data)
                 })
             })

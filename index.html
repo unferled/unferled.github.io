@@ -39,7 +39,7 @@
         <section class="section">
             <div class="container">
                 <h1 class="title">Contact</h1>
-                <form action="https://docs.google.com/forms/d/1FAIpQLSeWB8mwz4yGVtD8p-5QkPlXDY89wq1k8zqifUopsVCZeDlU5w/formResponse" target="_self" method="POST" id="mG61Hd" _lpchecked="1">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeWB8mwz4yGVtD8p-5QkPlXDY89wq1k8zqifUopsVCZeDlU5w/formResponse" target="_self" method="POST" id="mG61Hd" _lpchecked="1">
                     <div class="field">
                       <label class="label">Name</label>
                       <div class="control">
@@ -84,6 +84,10 @@
                     e.preventDefault()
                     var form = e.target
                     var data = new FormData(form)
+                    var data = [].slice.call(form).map(function(control) {
+                        return 'value' in control && control.name.includes('entry') ?
+                        control.name + '=' + (control.value === undefined ? '' : control.value) : '';
+                    }).join('&');
 
                     var request = new XMLHttpRequest()
 
@@ -92,8 +96,7 @@
                     }
 
                     request.open(form.method, form.action)
-                    request.setRequestHeader('Access-Control-Allow-Origin', 'https://unferled.github.io');
-                    request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
+                    request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                     request.send(data)
                 })
             })

@@ -3914,7 +3914,7 @@ input, select, textarea {
 	display: inline-block;
 	width: 1.5em;
 }
-#sidebar a .icon {
+.back a .icon {
 	display: inline-block;
 	width: 1.5em;
 }

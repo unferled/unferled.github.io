@@ -2545,7 +2545,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #3f8eb3;
+					color: #00d1b2;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -3906,7 +3906,20 @@ input, select, textarea {
 	color: #000000
 }
 
+.contact a, #sidebar a {
+	border-bottom: none;
+}
+
 .contact a .icon {
 	display: inline-block;
 	width: 1.5em;
+}
+#sidebar a .icon {
+	display: inline-block;
+	width: 1.5em;
+}
+
+.style3 a {
+	color: #000000;
+	border-bottom: dotted 1px rgba(0, 0, 0, 0.3);
 }

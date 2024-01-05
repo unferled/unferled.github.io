@@ -3923,3 +3923,8 @@ input, select, textarea {
 	color: #000000;
 	border-bottom: dotted 1px rgba(0, 0, 0, 0.3);
 }
+
+#intro {
+	color: #FFFFFF;
+}
+

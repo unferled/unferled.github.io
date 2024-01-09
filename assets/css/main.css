@@ -3928,3 +3928,38 @@ input, select, textarea {
 	color: #FFFFFF;
 }
 
+#logos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	padding: 0 5em;
+}
+
+#logos ul li {
+	list-style-type: none;
+    flex: 1 0 auto;
+    margin: 30px;
+    text-align: center;
+}
+
+#logos li img {
+	max-height: 100px;
+	max-width: 200px;
+}
+
+#quotes li {
+	list-style-type: none;
+	flex: 1 0 auto;
+	margin: 30px;
+	text-align: left;
+}	
+
+#quotes q {
+	display:block;
+	font-size: 1em;
+	width: 90%;
+	padding: 2em;
+	border: 3px solid #253149;
+	border-radius: 0.35em;
+}

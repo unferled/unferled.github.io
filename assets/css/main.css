@@ -3963,3 +3963,28 @@ input, select, textarea {
 	border: 3px solid #253149;
 	border-radius: 0.35em;
 }
+
+.callouts {
+	padding: 0;
+	list-style-type: none;
+}
+
+.callouts li {
+	font-size: 1.25em;
+	padding: 1em;
+	border-radius: 0.25em;
+	border: solid 1px rgba(255, 255, 255, 0.15);
+	background: rgba(255, 255, 255, 0.05);
+	margin: 0 0 1em 0;
+}
+
+/* .callouts li:after {
+	content: '';
+	display: block;
+	margin-left: 20%;
+	width: 40%;
+	height: 2px;
+	background: gray;
+	position: absolute;
+	bottom: -2em;
+} */
